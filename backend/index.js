@@ -1,13 +1,16 @@
 const express = require('express');
+const Razorpay = require("razorpay");
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+const nodemailer = require('nodemailer');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const crypto = require('crypto');
-const nodemailer = require('nodemailer');
 require('dotenv').config();
+
+const app = express();
 const PORT = process.env.PORT || 5000;
+
 // Middleware
 app.use(bodyParser.json());
 app.use(cors());
