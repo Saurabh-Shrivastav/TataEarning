@@ -6,23 +6,25 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const crypto = require('crypto');
 const nodemailer = require('nodemailer');
-// const { log } = require('console');
 require('dotenv').config();
-
-const app = express();
-const PORT =  4000;
+const PORT = process.env.PORT || 5000;
 // Middleware
 app.use(bodyParser.json());
 app.use(cors());
 
 // MongoDB connection
-mongoose.connect("mongodb://127.0.0.1:27017/mern-auth").then(async () => {
-    console.log('Connected to MongoDB');
-    const db = mongoose.connection.db;
-    await db.collection("users").createIndex({ email: 1 }, { unique: true });
-    await db.collection("users").createIndex({ phone: 1 }, { unique: true });
-    console.log("Indexes created on email and phone");
-})
+// mongoose.connect("mongodb://127.0.0.1:27017/mern-auth").then(async () => {
+//     console.log('Connected to MongoDB');
+//     const db = mongoose.connection.db;
+//     await db.collection("users").createIndex({ email: 1 }, { unique: true });
+//     await db.collection("users").createIndex({ phone: 1 }, { unique: true });
+//     console.log("Indexes created on email and phone");
+// })
+//     .catch(err => console.error('MongoDB connection error:', err));
+
+
+mongoose.connect(process.env.MONGODB_URI,)
+    .then(() => console.log('Connected to MongoDB'))
     .catch(err => console.error('MongoDB connection error:', err));
 
 // User Schema
