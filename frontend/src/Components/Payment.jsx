@@ -23,7 +23,7 @@ const Payment = () => {
     };
 
     return (
-        <div style={{overflow: "auto", height: "900px"}}>
+        <div style={{overflow: "auto", height: "700px"}}>
             <h3>Pay ₹{amount}</h3>
             <p>Choose any payment mode below:</p>
 
