@@ -7,7 +7,7 @@ const Payment = () => {
     const [utr, setUtr] = useState('');
 
     const handleSubmit = () => {
-        fetch('http://localhost:4000/payment', {
+        fetch('https://tataearning.onrender.com/payment', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ amount, utr })
