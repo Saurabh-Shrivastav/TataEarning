@@ -10,7 +10,7 @@ const ResetPasswordPage = () => {
 
     useEffect(() => {
         // Token validation ke liye backend request
-        fetch('/api/validate-token', {
+        fetch('https://tataearning.onrender.com/api/validate-token', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
