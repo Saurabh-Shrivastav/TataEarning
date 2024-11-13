@@ -15,9 +15,17 @@ const PORT = process.env.PORT || 5000;
 app.use(bodyParser.json());
 // app.use(cors());
 
-app.use(cors({
-  origin: 'https://tata-earning.vercel.app', // अपने फ्रंटेंड का URL यहां डालें
-}));
+// app.use(cors({
+//   origin: 'https://tata-earning.vercel.app', // अपने फ्रंटेंड का URL यहां डालें
+// }));
+
+const corsOptions = {
+  origin: 'https://tata-earning.vercel.app', // Tumhara frontend URL
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
+  credentials: true // Allow credentials (agar cookies ko use karna hai)
+};
+
+app.use(cors(corsOptions));
 
 // MongoDB connection
 // mongoose.connect("mongodb://127.0.0.1:27017/mern-auth").then(async () => {
