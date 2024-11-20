@@ -1,0 +1,155 @@
+/* body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input{
+  padding: 2vh;
+  width: 40vh;
+  border-radius: 5px;
+  background-color: #574242;
+}
+
+button{
+   padding: 2vh;
+   width: 20vh;
+   text-align: center;
+   align-items: center;
+} */
+
+
+
+
+
+
+
+/* General styles */
+.signin-container {
+  margin: 150px auto;
+  padding: 20px;
+}
+
+.signin-header {
+  line-height: 18px;
+}
+
+.signin-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.signin-header p {
+  font-size: 12px;
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  background-color: #ececec;
+  overflow: hidden;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+  transition: background-color 0.3s;
+}
+
+.tabs .active {
+  background-color: #1d1d29;
+  border-radius: 20px;
+  color: white;
+}
+
+/* Form */
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.signin-form label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: black;
+  font-weight: 500;
+}
+
+.signin-form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  color: black;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: #dadada;
+}
+
+.signin-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.signin-button:hover {
+  background-color: #0056b3;
+}
+
+/* Forgot password link */
+.forgot-password {
+  text-align: right;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .signin-container {
+    padding: 15px;
+  }
+
+  .tabs button {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .signin-header h2 {
+    font-size: 20px;
+  }
+
+  .signin-button {
+    font-size: 14px;
+  }
+}

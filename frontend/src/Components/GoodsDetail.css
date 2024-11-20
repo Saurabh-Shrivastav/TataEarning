@@ -1,0 +1,131 @@
+/* General container */
+.goods-detail-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.back-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+h1 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* VIP information */
+.vip-info {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.vip-info h2 {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.vip-info .highlight {
+    color: red;
+}
+
+.vip-info p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.income-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.income-section h3 {
+    font-size: 14px;
+    color: grey;
+    margin-bottom: 5px;
+}
+
+.income-section p {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Invest button */
+.invest-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.invest-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Investment details */
+.investment-details {
+    text-align: center;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.balance-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eef2f7;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.balance-section p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.recharge-btn {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.recharge-btn:hover {
+    background-color: darkgreen;
+}

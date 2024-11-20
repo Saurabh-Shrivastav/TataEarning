@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.signinContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: rgb(37, 195, 195);
+    margin-bottom: 5vh;
+    gap: 20px;
+    padding: 4rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+                rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+input{
+    padding: .8em;
+    width: 15rem;
+    border-radius: 5px;
+}
+
+input::placeholder{
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#signup{
+    width: 7rem;
+    margin-top: 4vh;
+    padding: .8em;
+    border-radius: 5px;
+    border: transparent;
+}

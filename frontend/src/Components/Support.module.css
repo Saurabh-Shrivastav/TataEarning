@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.setImage img{
+    width: 40%;
+    mix-blend-mode: darken;
+}

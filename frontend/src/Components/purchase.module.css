@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+}
+
+/* Container */
+.purchaseContainer {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    /* background-color: #f9f9f9; */
+    min-height: 100vh;
+    /*Full screen height*/
+}
+
+/* Header with Back Arrow and Title */
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    padding: 10px 0;
+    z-index: 10;
+    border-bottom: 1px solid #ccc;
+}
+
+.backarrow {
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #333;
+}
+
+.heading {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Content Area */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Purchase List */
+.purchaselist {
+    display: flex;
+    flex-direction: column;    /* Cards ko column-wise arrange karega */
+    gap: 1rem;    /* Cards ke beech space add karega */
+    align-items: center;    /* Center align karega cards ko */
+    margin-top: 120px;
+    /* padding: 0; */
+}
+
+.purchaseitem {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    height: 20vh;
+    width: 200%;  /*Cards ka width set kare*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    /* margin-top: 1rem; */
+}
+
+/* Row for Status and Amount */
+.columnView {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    /* margin-top: -50%; */
+    grid-template-columns: auto;
+    gap: 10px;    /* flex-direction: column; */
+    align-items: flex-start;
+    gap: 10px;    /* Adjust spacing between fields */
+}
+
+.field {
+    /* flex: 1; */
+    /* position: ; */
+    /* text-align: center;    */
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 500px; */
+}
+
+.column strong {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.column div {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* No Data Message */
+.noData {
+    text-align: center;
+    color: #777;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    body{
+        overflow-y: auto;
+    }
+}

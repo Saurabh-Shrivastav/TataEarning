@@ -1,0 +1,246 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #e2f2ff;
+}
+
+header{
+    height: 54px;
+    background: transparent !important;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.header-title{
+    font-size: 18px;
+    width: 100%;
+}
+
+.header-icon{
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+}
+
+main{
+    padding: 15px;
+    height: calc(100vh - 54px - 70px );
+    overflow-y: auto;
+}
+
+.carousel-item img{
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+}
+
+.carousel-control-next {
+    /* background: aqua; */
+    border: transparent;
+    width: 5rem;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.carousel-control-next:hover{
+    transform: scale(1.1);
+}
+
+.home_travel{
+    height: 87px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 1rem;
+}
+
+.home_travel_item{
+    padding-top: 11px;
+    width: 79px;
+    height: 87px;
+    text-align: center;
+    background: #fff;
+    border-radius: 9px;
+}
+
+.home_travel_item .travel_item_head img{
+    width: 35px;
+    height: 35px;
+}
+
+.home_travel a{
+    text-decoration: none;
+}
+
+.travel_item_head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.travel_item_head img{
+    border-radius: 5px;
+}
+
+.travel_item_cont {
+    font-family: FuturaBT-Medium;
+    color: #111;
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+    font-size: 13px;
+    margin-top: 12px;
+    transition: .5s ease-in;
+}
+
+.travel_item_cont:hover{
+    color: green;
+}
+
+.head-img {
+    display: flex;
+}
+.head-img img{
+    width: 350px;
+    border-radius: 10px;
+    height: 200px;
+}
+.product-box {
+    margin-bottom: 15px;
+    height: 210px;
+    background: #d1dcf7;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    padding: 8px 18px;
+    position: relative;
+}
+.price {
+    position: absolute;
+    z-index: 2;
+    top: 11px;
+    left: 11px;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    background: #202734;
+    border-radius: 8px;
+    font-family: FuturaBT-Bold;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 0 9px;
+}
+.product-img {
+    width: 40%;
+    margin: 0 auto;
+    height: 93px;
+    display: flex;
+}
+.product-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f1f8;
+}
+.product-desc .product-name {
+    font-family: FuturaBT-Bold;
+    color: #111;
+    font-size: 15px;
+    font-weight: 700;
+}
+.product-desc .product-day {
+    font-family: FuturaBT-Bold;
+    color: #111;
+    font-size: 12px;
+    font-weight: 700;
+}
+.product-desc .product-day span {
+    color: #fb7b44;
+    font-size: 13px;
+}
+.product-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 11px;
+}
+.product-detail-info {
+    font-family: FuturaBT-Medium;
+    color: #111;
+    font-size: 12px;
+    text-align: start;
+}
+.product-detail-info span {
+    font-family: FuturaBT-Bold;
+    font-weight: 600;
+    color: #fb7b44;
+    font-size: 13px;
+}
+.product-btn {
+    height: 32px;
+    line-height: 32px;
+    background: #168fe1;
+    border-radius: 8px;
+    padding: 0 18px;
+    font-family: FuturaBT-Bold;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+}
+.box-green {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    /*padding: 0 14px;*/
+}
+.box-green .typeItem {
+    /*width: 8rem;*/
+    cursor: pointer;
+    height: 45px;
+    border-radius: 20px;
+    background: #e5e5e5;
+    padding: 0 13px;
+    font-family: FuturaBT-Bold;
+    color: #111;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 45px;
+}
+.box-green .active {
+    background: #43b4e9;
+    color: #fff;
+}
+.product-box2,
+.product-box3 {
+    display: none;
+}
+.product-type {
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    top: 11px;
+    right: 15px;
+    padding: 0 9px;
+    height: 30px;
+    line-height: 30px;
+    color: red;
+    font-weight: 800;
+    font-size: 15px;
+}
+.product-box1 {
+    display: none;
+}
+.product-box3 {
+    display: block;
+}

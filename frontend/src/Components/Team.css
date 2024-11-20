@@ -1,0 +1,346 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #e2f2ff;
+    overflow-x: hidden;
+}
+
+header {
+    height: 54px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.header-title {
+    font-size: 18px;
+    width: 100%;
+}
+
+.header-icon {
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+}
+
+.header-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+main {
+    padding: 15px;
+    height: calc(100vh - 54px - 70px);
+    overflow-y: auto;
+    margin-bottom: 1rem;
+}
+
+.team-yq {
+    z-index: 1;
+    min-height: 149px;
+    background: #fff;
+    border-radius: 16px;
+    margin: 0 auto;
+    position: relative;
+    padding: 25px 0;
+}
+
+.team-yq-title {
+    font-family: FuturaBT-Medium;
+    color: #111;
+    font-size: 16px;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.yq-title-reward {
+    color: #d81f06;
+    font-weight: 600;
+}
+
+.yq-title-reward svg {
+    vertical-align: bottom;
+}
+
+.team-yq-code {
+    margin-top: 15px;
+    padding: 0 18px 20px 18px;
+    border-bottom: 1px dotted #ccd4d8;
+}
+
+.team-yq-code .yq-code-yqm {
+    height: 60px;
+    line-height: 60px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    font-family: FuturaBT-Bold;
+    color: #fd7d44;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.team-yq-code .yq-codd-btn {
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background: #168fe1;
+    border-radius: 10px;
+    font-family: FuturaBT-Bold;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.yq-link-title {
+    padding: 0 18px;
+    margin-top: 20px;
+    font-family: FuturaBT-Bold;
+    color: #111;
+    font-size: 16px;
+    text-align: start;
+}
+
+.yq-link-cont {
+    margin: 0 auto;
+    width: 85%;
+    height: 45px;
+    background: #edf2f6;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6px 0 16px;
+    margin-top: 15px;
+}
+
+.yq-link-cont span {
+    font-family: FuturaBT-Bold;
+    color: #fb7d44;
+    font-size: 15px;
+    display: inline-block;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.yq-link-cont .yq-link-cont-btn {
+    height: 32px;
+    line-height: 32px;
+    background: #168fe1;
+    border-radius: 10px;
+    padding: 0 11px;
+    font-family: FuturaBT-Bold;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.team-level-list {
+    margin-top: 15px;
+}
+
+.team-level-list .team-box-item {
+    margin-bottom: 15px;
+}
+
+.team-level-box {
+    background: linear-gradient(90deg, #3cc800, #fff 87%);
+    padding: 18px 14px;
+    position: relative;
+}
+
+.team-box-item {
+    font-family: FuturaBT-Bold;
+    color: #fff;
+    font-size: 12px;
+    margin-right: 25vh;
+}
+
+.team-box-item span {
+    font-family: FuturaBT-Bold;
+    margin-left: 2px;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: -1px 1px 0 #111, 1px 1px 0 #111, 1px -1px 0 #111, -1px -1px 0 #111;
+}
+
+.team-dj {
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    transform: translateY(-50%);
+}
+
+.team-dj-title {
+    font-family: FuturaBT-Bold;
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.team-dj-cont {
+    font-family: FuturaBT-Bold;
+    color: #111;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.team-dj-cont span {
+    font-family: FuturaBT-Bold;
+    color: #fb7b44;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.team-level-box-12 {
+    background: linear-gradient(90deg, #0e61d9, #fff 87%);
+}
+
+.team-level-box-13 {
+    background: linear-gradient(90deg, #f8db01, #fff 87%);
+}
+
+.team-level-list .team-box-item-p {
+    margin-bottom: 0;
+}
+
+.invite-friends {
+    margin: 20px 0;
+    position: relative;
+    background-size: 100% 100%;
+    padding: 20px 34px;
+    background: hsla(0, 0%, 100%, .3);
+    box-shadow: 0 6px 12px 0 rgba(0, 25, 70, .1);
+    border-radius: 6px 25px 25px 25px;
+}
+
+.invite-friends-cont{
+    color: #111;
+    text-align: start;
+}
+
+.invite-friends-cont span {
+    color: #fb7d44;
+    font-weight: 600;
+}
+
+.invBtn {
+    text-align: right;
+}
+
+.invBtn input {
+    height: 32px;
+    line-height: 32px;
+    background: #168fe1;
+    border-radius: 10px;
+    padding: 0 11px;
+    font-family: FuturaBT-Bold;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border: 0;
+}
+
+.create-team {
+    margin: 40px auto 20px auto;
+}
+
+.create-team div {
+    font-family: FuturaBT-Bold;
+    color: #565a75;
+    font-size: 12px;
+    line-height: 140%;
+    margin-top: 13px;
+}
+
+.invBtn .btnCNot {
+    background: #c0c0c0;
+}
+
+footer {
+    height: 60px;
+    background-color: #fff;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -1px 6px 0 rgba(0, 7, 20, .06);
+    padding: 0 5px;
+    z-index: 99;
+}
+
+footer nav {
+    width: 100%;
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+}
+
+footer nav ul li {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+}
+
+footer nav ul li:last-child {
+    margin-right: 0;
+}
+
+footer nav ul li a {
+    color: gray;
+    text-decoration: none;
+    border-radius: 9px;
+    font-weight: 600;
+    font-size: 12px;
+    display: block;
+    height: 34px;
+    line-height: 34px;
+}
+
+footer nav ul li .active {
+    background: #168fe1;
+    color: #fff;
+}
+
+@media (max-width: 768px){
+
+    body{
+        overflow: hidden;
+    }
+    
+    /* #main{
+        margin-left: 100px;
+        margin-left: 7.5rem;
+        width: 62%;
+        margin-bottom: 2rem;
+    } */
+    #main{
+        /* margin-left: 100px; */
+        margin-left: 13rem;
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+
+    .team-level-list{
+        margin-bottom: 5em;
+    }
+}
