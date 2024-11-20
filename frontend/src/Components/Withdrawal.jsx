@@ -15,7 +15,7 @@ const Withdraw = () => {
   useEffect(() => {
     const fetchWallet = async () => {
       try {
-        const response = await fetch(`http://localhost:4000/wallet/${userPhone}`, {
+        const response = await fetch(`https://tataearning.onrender.com/wallet/${userPhone}`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json", // If required
@@ -64,7 +64,7 @@ const Withdraw = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:4000/withdraw", {
+      const response = await fetch("https://tataearning.onrender.com/withdraw", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
