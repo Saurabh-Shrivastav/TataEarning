@@ -16,14 +16,38 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // MongoDB connection
-mongoose.connect("mongodb://127.0.0.1:27017/mern-auth").then(async () => {
-    console.log('Connected to MongoDB');
-    const db = mongoose.connection.db;
-    await db.collection("users").createIndex({ email: 1 }, { unique: true });
-    await db.collection("users").createIndex({ phone: 1 }, { unique: true });
-    console.log("Indexes created on email and phone");
-})
-    .catch(err => console.error('MongoDB connection error:', err));
+// mongoose.connect(process.env.MONGODB_URI,)
+//     .then(() => console.log('Connected to MongoDB'))
+//     .catch(err => console.error('MongoDB connection error:', err));
+//     const db = mongoose.connection.db;
+//     await db.collection("users").createIndex({ email: 1 }, { unique: true });
+//     await db.collection("users").createIndex({ phone: 1 }, { unique: true });
+//     console.log("Indexes created on email and phone");
+// })
+//     .catch(err => console.error('MongoDB connection error:', err));
+
+const connectToDatabase = async () => {
+    try {
+        const MONGODB_URI = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/mern-auth";
+        await mongoose.connect(MONGODB_URI, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+        });
+        console.log('Connected to MongoDB');
+
+        // Ensure indexes for unique fields
+        const db = mongoose.connection.db;
+        await db.collection("users").createIndex({ email: 1 }, { unique: true });
+        await db.collection("users").createIndex({ phone: 1 }, { unique: true });
+        console.log("Indexes created on email and phone");
+    } catch (err) {
+        console.error('MongoDB connection error:', err.message);
+        process.exit(1); // Exit process with failure code
+    }
+};
+connectToDatabase();
+
+
 
 // User Schema
 const UserSchema = new mongoose.Schema({
