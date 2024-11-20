@@ -19,7 +19,7 @@ function Me() {
                 // console.log("Phone value: ", phone);
                 const fetchWallet = async () => {
                     try {
-                        const response = await fetch(`http://localhost:4000/wallet/${phone}`, {
+                        const response = await fetch(`https://tataearning.onrender.com/wallet/${phone}`, {
                             method: 'GET',
                             headers: {
                                 'Content-Type': 'application/json', // If required
