@@ -36,7 +36,7 @@ function SignIn({ setIsAuthenticated }) {
     setIsLoading(true);
 
     try {
-      const response = await fetch('http://localhost:4000/signin', {
+      const response = await fetch('https://tataearning.onrender.com/signin', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ phone, email, password }),
@@ -74,7 +74,7 @@ function SignIn({ setIsAuthenticated }) {
   const handleForgotPasswordRequest = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:4000/forgotPassword', {
+      const response = await fetch('https://tataearning.onrender.com/forgotPassword', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: resetEmail })
@@ -93,7 +93,7 @@ function SignIn({ setIsAuthenticated }) {
       return;
     }
     try {
-      const response = await fetch(`http://localhost:4000/reset-password/${resetToken}`, {
+      const response = await fetch(`https://tataearning.onrender.com/reset-password/${resetToken}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ newPassword })
