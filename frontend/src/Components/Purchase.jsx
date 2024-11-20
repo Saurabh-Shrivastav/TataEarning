@@ -1,4 +1,4 @@
-import React, { StrictMode, useEffect, useState } from 'react';
+import React, {  useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 // import './Purchase.css'; // Styling for better UI
 //import styles from './Purchase.module.css'; // Styling for better UI
