@@ -21,7 +21,7 @@ const Payment = () => {
 
     const handleSubmit = () => {
         setLoading(true); // Set loading to true when request is sent
-        fetch('http://localhost:4000/payment', {
+        fetch('https://tataearning.onrender.com/payment', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
