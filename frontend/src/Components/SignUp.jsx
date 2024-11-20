@@ -53,7 +53,7 @@ const SignUp = ({ setIsAuthenticated }) => {
         setIsLoading(true);
 
         try {
-            const response = await fetch('http://localhost:4000/signup', {
+            const response = await fetch('https://tataearning.onrender.com/signup', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
